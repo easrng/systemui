@@ -1,0 +1,58 @@
+body.mac [data-role~="titlebar"] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(180deg, #e1e0e2, #d0cfd1);
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+}
+
+body.mac [data-role~="menu-btn"] {
+    display: none;
+}
+
+body.mac [data-role~="sidebar"] {
+    display: flex;
+    align-items: flex-start;
+    order: 2;
+    flex-grow: 1;
+}
+
+body.mac [data-role~="sidebar-title"] {
+    display: none;
+}
+
+body.mac [data-role*="btn"] {
+    border: 1px solid #c3c3c3;
+    background-color: #fff;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 2px 8px;
+    font-weight: 500;
+    margin-left: 6px;
+    height: 25px;
+    box-shadow: 0 1px #0000000d;
+    outline: none;
+    border-bottom-color: #bbb;
+}
+
+body.mac [data-role~="titlebar"] h1 {
+    order: 0;
+    margin: 3px 0 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+body.mac [data-role*="btn"]:active {
+    background: linear-gradient(180deg, #529bf7, #1e6cdd);
+    color: #fff;
+    border-color: #4290f6;
+    border-bottom-color: #1553d5;
+}
+body.mac {
+    padding-top: 60px;
+}
