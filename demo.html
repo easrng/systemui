@@ -1,68 +1,22 @@
 <!DOCTYPE html>
-<!--
-Created using JS Bin
-http://jsbin.com
-
-Copyright (c) 2019 by anonymous (http://jsbin.com/jubizoqico/17/edit)
-
-Released under the MIT license: http://jsbin.mit-license.org
--->
-<meta name="robots" content="noindex">
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>SystemUi CSS</title>
-  <script src="https://cdn.jsdelivr.net/gh/hosszukalman/browserclass@master/browserclass.js"></script>
-<style id="jsbin-css">
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-body {
-  background-color:#fff;
-  color:#000;
-  margin:0;
-  padding:0;
-  width:100%;
-  height:100%;
-}
-body.win{
-  background-color:#eee;
-  color:#000;
-}
-body.win [data-role^="titlebar"] h1{
-  font-size:20px;
-  font-weight: normal;
-}
-body.win [data-role^="titlebar"]{
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-body.win [data-role^="titlebar"] *{
-    margin: 14px;
-}
-body.win [data-role^="menu-btn"]{
-  margin: 0;
-  padding:0;
-  width: 55px;
-  height: 55px;
-  border: none;
-  font-size: 25px;
-  font-weight: lighter;
-  background-color: #0000;
-}
-body.win [data-role^="menu-btn"]:hover {
-	background-color: #0003;
-}
-body.win [data-role^="menu-btn"]:active {
-	background-color: #0006;
-}
-
-</style>
-</head>
-<body>
-  <header data-role="titlebar"><button data-role="menu-btn">≡</button><h1>SystemUi CSS</h1></header>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>SystemUi CSS</title>
+    <script src="https://cdn.jsdelivr.net/gh/hosszukalman/browserclass@master/browserclass.js"></script>
+    <link href="systemui.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header data-role="titlebar">
+      <label for="showsidebar" data-role="menu-btn">≡</label>
+      <input id="showsidebar" type="checkbox">
+      <aside data-role="sidebar">
+        <div data-role="sidebar-title">Options</div>
+        <button data-role="sidebar-btn">Settings</button>
+        <button data-role="sidebar-btn">About</button>
+      </aside>
+      <h1>SystemUi CSS</h1>
+    </header>
+  </body>
 </html>
